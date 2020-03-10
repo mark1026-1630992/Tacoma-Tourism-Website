@@ -1,100 +1,260 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css"/>
     <title>Point Defiance Zoo</title>
+    <script src="script.js></script>
 </head>
 <body>
     <header>
-    <img src="mount.jpg" alt="Mount Rain" width="100%">
-        <!---Navigation Menu--->
-     <nav>
-              <ul>
-                  <!-- things.html will be a drop down menu -->
-                      <div class="navbar">
-                      <a href="index.html">Home</a>
-                      <a href="placesToStay.html">Places To Stay</a>
-                      <a href="thingsToEat.html">Things To Eat</a>
-                      <div class="dropdown">
-                        <button class="dropbtn">Things To Do
-                          <i class="fa fa-caret-down"></i>
+         <img src="mount.jpg" alt="Mount Rain" width="100%">
+                                                          
+                                                      
+         <!---Navigation Menu--->
+         <nav>
+             <ul>                  
+                <div class="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="placesToStay.html">Places To Stay</a>
+                    <a href="thingsToEat.html">Things To Eat</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Things To Do                                           
+                            <i class="fa fa-caret-down"></i>
                         </button>
                         <div class="dropdown-content">
-                          <a href="Museums.html">Museums</a>
-                          <a href="Point_Ruston.html">Point Ruston</a>
-                          <a href="tacoma_dome.html">Tacoma Dome</a>
-                <a href="point_defiance.html">Point Defiance Zoo</a>
+                            <a href="Museums.html">Museums</a>
+                            <a href="Point_Ruston.html">Point Ruston</a>
+                            <a href="tacoma_dome.html">Tacoma Dome</a>
+                            <a href="point_defiance.html">Point Defiance Zoo</a>
                         </div>
-                      </div> 
-                      <a href="newForm.html">Contact Us</a>
-                    </div>
-              </ul>
+                    </div> 
+                    <a href="newForm.html">Contact Us</a>
+                </div>
+            </ul>
         </nav>
     </header>
+                                          
 
     <!---Creates a banner--->
     <div class="banner-img"></div>
     <div class="banner-text">
-        <p><strong>Located in Tacoma, Washington, Point Defiance Zoo is home to thousands of specimens representing hundreds of animal species</strong></p>
-        <a id="in_page" href="https://www.pdza.org/visit/hours/">ZOO HOURS</a>
+        <p><strong>Located in Tacoma, Washington, Point Defiance Zoo is home to thousands of specimens representing hundreds of animal species.</strong></p>
+        <a id="in_page" href="zoo_hours">ZOO HOURS</a>
+    </div>
+    <br />
+    <h1 id="explore">MEET THE ANIMALS ...</h1>
+    <br /><br />
+    
+                    
+    <section class="slideshow-container">
+                                        
+                                        
+        <!---Created a slideshow of various gifs using javascript--->
+        <!---Full-width images with number and caption text--->
+        <section class="mySlides fade">
+            <section class="numbertext">1 / 10</section>
+            <img src="imgs/walrus.jpg" alt="Walrus" style="width:1000px;height:600px;border:0;">
+            <section class="text">Pacific Walrus</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">2 / 10</section>
+            <img src="imgs/sea_lion.jpg" alt="Sea lion" style="width:1000px;height:600px;border:0;">
+            <section class="text">California Sea Lion</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">3 / 10</section>
+            <img src="imgs/sea_otter.jpg" alt="Otter" style="width:1000px;height:600px;border:0;">
+            <section class="text">Sea Otter</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">4 / 10</section>
+            <img src="imgs/harbor_seal.jpg" alt="Seal" style="width:1000px;height:600px;border:0;">
+            <section class="text">Harbor Seal</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">5 / 10</section>
+            <img src="imgs/puffins.jpg" alt="Puffins" style="width:1000px;height:600px;border:0;">
+            <section class="text">Puffins</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">6 / 10</section>
+            <img src="imgs/penguin.jpg" alt="Penguin" style="width:1000px;height:600px;border:0;">
+            <section class="text">Penguin</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">7 / 10</section>
+            <img src="imgs/polar_bear.jpg" alt="Polar Bear" style="width:1000px;height:600px;border:0;">
+            <section class="text">Polar Bear</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">8 / 10</section>
+            <img src="imgs/muskox.jpg" alt="Muskox" style="width:1000px;height:600px;border:0;">
+            <section class="text">Muskox</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">9 / 10</section>
+            <img src="imgs/arctic_fox.jpg" alt="Arctic Fox" style="width:1000px;height:600px;border:0;">
+            <section class="text">Arctic Fox</section>
+        </section>
+
+        <section class="mySlides fade">
+            <section class="numbertext">10 / 10</section>
+            <img src="imgs/barn_owl.jpg" alt="Barn Owl" style="width:1000px;height:600px;border:0;">
+            <section class="text">Barn Owl</section>
+        </section>
+
+        <!-- Next and previous buttons-->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+    <br>
+                                               
+
+    <!---Creates the dots--->
+    <section style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+    </section>
+    <br />
+                                                    
+
+    <h2>Pacific Walrus</h2>
+    <p class="center">
+        Pacific walruses are found in the Bering and Chukchi seas. They prefer to haul out on polar ice but will use small rocky islands when ice isn’t available.
+    </p>
+
+    <h2>California Sea Lion</h2>
+    <p class="center">
+        California sea lions live in coastal waters from Canada to Mexico, and in the Galapagos Islands.
+    </p>
+
+    <h2>Sea Otter</h2>
+    <p class="center">
+        Sea otters live in rocky coastal areas in shallow waters off Alaska, the Aleutian and Commander Islands, Vancouver Island, Washington and California.
+    </p>
+
+    <h2>Harbor Seal</h2>
+    <p class="center">
+        Harbor seals live near piers and beaches along temperate subarctic and Arctic coastlines in the North Atlantic and North Pacific Oceans. They also live in Puget Sound.
+    </p>
+
+    <h2>Puffins</h2>
+    <p class="center">
+        Horned puffins live in coastal Japan, Russia, British Columbia and Alaska. Tufted puffins live from Alaska to California and northern Asia; murres on the Pacific and Atlantic.
+    </p>
+
+    <h2>Penguin</h2>
+    <p class="center">
+        These penguins nest and breed in low forests or flat land along the southern coast of South America. But they’re pelagic - they spend most of their lives at sea.
+    </p>
+
+    <h2>Polar Bear</h2>
+    <p class="center">
+        These penguins nest and breed in low forests or flat land along the southern coast of South America. But they’re pelagic - they spend most of their lives at sea.
+    </p>
+
+    <h2>Muskox</h2>
+    <p class="center">
+        Muskoxen have lived in the frozen Arctic for many thousands of years, living on prairies and tundra in Greenland, northern Canada and Alaska.
+    </p>
+
+    <h2>Arctic Fox</h2>
+    <p class="center">
+        With thick fur that turns white in winter to camouflage in snow, Arctic foxes live in treeless tundra throughout the Arctic: Eurasia, North America, Greenland and Iceland.
+    </p>
+
+    <h2>Barn Owl</h2>
+    <p class="center">
+        Barn owls live around farms and fields in the Pacific Northwest and on every other continent except Antarctica. They are nocturnal hunters, catching rodents with powerful feet and sharp talons.
+    </p>
+    <br /><br /><br />
+                     
+
+    <div class="footer">
+        <h2 id="zoo_hours">2020 Hours</h2>
+        <br />
+        <h2 class="point_defiance">Open 9:30am - 4pm daily</h2>
+        <br />
+        <h3 class="days">Jan. 1 - 5</h3>
+        <h3 class="days">Jan. 6 - Feb. 29</h3>
+        <h3 class="days">Mar. 1 - May 8</h3>
+        <h3 class="days">May 9 - June 26</h3>
+        <h3 class="days">June 27 - Sept. 7</h3>
+        <h3 class="days">Sept. 8 - 27</h3>
+        <h3 class="days">Sept. 28 - Oct. 31</h3>
+        <h3 class="days">Nov. 1 - Dec. 18</h3>
+        <h3 class="days">Dec. 19 - Jan. 3</h3>
+        <h3 class="days">ZOOLIGHTS: Nov. 27 - Jan. 3</h3>
     </div>
 
-    <h1 id="explore">EXPLORE</h1>
 
-    <!---Creates a table of images--->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-    <table>
-        <tr>
-            <th>ROCKY SHORES</th>
-            <th>PACIFIC SEAS</th>
-            <th>ARCTIC TUNDRA</th>
-        </tr>
-        <tr>
-            <td><img id="cat1" src="imgs/ocean.jpg" width="500" height="500" /></td></a>
-            <td><img id="cat2" src="imgs/sea.jpg" width="500" height="500" /></td>
-            <td><img id="cat3" src="imgs/arctic.jpg" width="500" height="500" /></td>
-        </tr>
-        <tr>
-            <td><p>Go see their seabirds! They have horned and tufted puffins, as well as common Murres!</p></td>
-            <td><p>Go check out the Pacific seas aquarium, home to sea turtles, jellyfish, soldierfish, and Hammerhead Sharks. As well as otheer pacific ocean natives such as the Giant Pacific Octopus!</p></td>
-            <td><p>Many residents of the arctic tundra can be found here, such as Muskox, Polar Bears, and arctic foxes!</p></td>
-        </tr>
-    </table>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-    <table>
-        <tr>
-            <th>RED WOLF WOODS</th>
-            <th>ASIAN FOREST SANCTUARY</th>
-            <th>BUDGIE BUDDIES</th>
-        </tr>
-        <tr>
-            <td><img id="cat1" src="imgs/redWolf.png" width="500" height="500" /></td></a>
-            <td><img id="cat2" src="imgs/anoa.jpg" width="500" height="500" /></td>
-            <td><img id="cat3" src="imgs/budgies.jpg" width="500" height="500" /></td>
-        </tr>
-        <tr>
-            <td><p>Go see their Red wolf exhibit. These wolves are nearly extinct, with 40 in the wild and 261 in captivity. PDZA is part of a program to help restore their population!</p></td>
-            <td><p>This exhibit is home to tigers, tapirs, elephants, siamangs, and more! You can here from their keepers everyday at 12:30. Come learn more about these wonderful creatures today!</p></td>
-            <td><p>Experience what it's like to feed a budgie! They are very social and will love to see you!</p></td>
-        </tr>
-    </table>
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-    <footer>
-       <a href="https://www.instagram.com/ptdefiancezoo/"><img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png" width="50" height="50"/></a>
-       <a href="https://www.facebook.com/PtDefianceZoo"><img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" width="50" height="50"/></a>
-       <a href="https://twitter.com/PtDefianceZoo"><img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png" width="50" height="50"/></a>
-    </footer>
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <br /><br />
+
+
+    <center>
+        Tacoma Tourism &copy 2020
+        <p>
+            <a class="media_links" href="https://www.instagram.com/ptdefiancezoo/"><img src="https://instagram-brand.com/wp-content/uploads/2016/11/Instagram_AppIcon_Aug2017.png" width="50" height="50" /></a>
+            <a href="https://www.facebook.com/PtDefianceZoo"><img src="https://facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png" width="50" height="50" /></a>
+            <a href="https://twitter.com/PtDefianceZoo"><img src="http://pngimg.com/uploads/twitter/twitter_PNG32.png" width="50" height="50" /></a>
+        </p>
+    </center>
 </body>
 </html>
 
+               
+                    
+ 
+
+    
+   
+
+    
+
+   
