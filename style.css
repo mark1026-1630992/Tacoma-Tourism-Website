@@ -4,21 +4,15 @@ h1 {
 }
 
 h2 { 
-  font-size: 26px;
   text-align: center;
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
   
- }
- 
-h6 {
-	text-align: center;
-	font-size: 22px;
  }
 
 p.center  {
 	text-align: center;
 	font-family:"Open Sans", Helvetica, Arial, sans-serif;
-	
+	font-size: 22px;
 }
 
 .navbar {
@@ -269,6 +263,8 @@ p.text-information {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 h3.td-header {
   font-size: 44px;
