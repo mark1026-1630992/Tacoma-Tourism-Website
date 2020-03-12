@@ -15,6 +15,13 @@ p.center  {
 	font-size: 22px;
 }
 
+p.address {
+	text-align: center;
+	font-weight:bold;
+	font-family:"Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 22px;
+}
+
 .navbar {
   overflow: hidden;
   background-color: #333;
@@ -384,4 +391,10 @@ h1.td-title {
 }
 #rotate {
   transform: rotate(-90deg);
+}
+
+.footer
+{
+	 text-align: center;
+	 font-weight: bold;
 }
