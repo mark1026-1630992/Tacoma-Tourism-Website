@@ -273,6 +273,12 @@ p.text-information {
   padding-left: 5%;
   padding-right: 5%;
 }
+
+p.text-center {
+	font-size: 22px;
+	text-align: center;
+}
+
 h3.td-header {
   font-size: 44px;
   text-align: center;
