@@ -398,3 +398,10 @@ h1.td-title {
 	 text-align: center;
 	 font-weight: bold;
 }
+img.banner {
+  width: 100%;
+}
+p.trademark {
+  text-align: center;
+  font-weight: bold; 
+}
