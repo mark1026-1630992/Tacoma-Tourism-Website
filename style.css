@@ -275,21 +275,19 @@ p.text-information {
 }
 h3.td-header {
   font-size: 44px;
-  display: flex;
-  align-items: left;
-  justify-content: left;
+  text-align: center;
   margin-bottom: 6px;
 }
 div.overview-section {
-	clear: both;
+  clear: both;
 }
 div.history-section{
   clear: both;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 div.events-section {
   clear: both;
-	margin-top: 40px;
+  margin-top: 20px;
 }
 h1.td-title {
 	font-size: 40px;
